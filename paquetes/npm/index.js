@@ -1,3 +1,3 @@
 const isOdd = require('is-odd');
 
-console.log(isOdd(43));
+console.log(isOdd(4));
