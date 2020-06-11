@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #333333;
+        color: azure;
+      }
+    </style>
+    <title>Aplicacion de Electron</title>
+  </head>
+  <body>
+    <h1 id="titulo">Soy una aplicacion de escritorio</h1>
+    <button id="boton">Soy un boton</button>
+  </body>
+  <script>
+    document.getElementById('boton').addEventListener("click", cambiarColor);
+    function cambiarColor() {
+      document.getElementById('titulo').style.color = 'red';
+    }
+    // Tambien:
+    // boton = document.getElementById('boton');
+    // titulo = document.getElementById('titulo');
+    // boton.addEventListener('click', cambiarColor);
+    // function cambiarColor() {
+    //   titulo.style.color = 'red';
+    // }
+  </script>
+</html>
